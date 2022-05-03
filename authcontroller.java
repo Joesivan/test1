@@ -12,7 +12,12 @@ public class AuthController {
 		admin.validateCreds();
 		return admin;
 	}
-
+@GetMapping("/admin/auth")
+	public UserDetails auth() {
+		UserDetails admin = UserDetails.getAdmin();
+		admin.validateCreds();
+		return admin;
+	}
 	@GetMapping("/check-session")
 	public boolean checkSession() {
 		UserDetails user = UserDetails.getUser();

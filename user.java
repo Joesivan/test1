@@ -3,7 +3,7 @@ package com.example.springboot;
 import com.github.javafaker.Faker;
 import lombok.Builder;
 import lombok.Data;
-import java.io.Serializable;
+import java.io.Serializable
 import java.util.Locale;
 
 @Builder
@@ -13,6 +13,7 @@ public class UserDetails implements Serializable {
     protected String lastName;
     protected String ssn;
     protected String phoneNumber;
+    protected String email;
 
     public UserDetails(String firstName, String lastName, String ssn, String phoneNumber) {
 
