@@ -13,7 +13,8 @@ public class UserDetails implements Serializable {
     protected String lastName;
     protected String ssn;
     protected String phoneNumber;
-
+    protected String fbintegration;
+    
     public UserDetails(String firstName, String lastName, String ssn, String phoneNumber) {
 
         this.firstName=firstName;
